@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sueldo Líquido</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/sueldoliquido.js"></script>
+    <link rel="stylesheet" href="css/soluciones.css">
+</head>
+
+<body id="bodyindeminzacion">
+
+    <header>
+        <div class="logointecap">
+            <img src="img/logo.jpg" class="imaintecap" width="250px" height="150px" alt="">
+        </div>
+        <div class="logos">
+            <a href="https://www.facebook.com/intecapoficial/?locale=es_LA"><img src="img/logofacebook.jpg" width="55px"
+                    height="45px" class="imagen" alt=""></a>
+            <a href="https://twitter.com/intecapoficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
+                    src="img/logox.png" width="60px" height="45px" class="imagen" alt=""></a>
+            <a href="https://www.instagram.com/intecapoficial/?hl=es"><img src="img/logoig.png" width="45px"
+                    class="imagen" height="45px" alt=""></a>
+            <a href="https://www.youtube.com/intecapoficial"><img src="img/logoy.jpg" width="55px" class="imagen"
+                    height="45px" alt=""></a>
+            <a href="https://gt.linkedin.com/school/intecapoficial/"><img src="img/link.png" width="60px" class="imagen"
+                    height="45px" alt=""></a>
+        </div>
+    </header>
+
+    <nav>
+
+        <ul class="">
+            <li class="active"><a href="index.html" class="links">Inicio</a></li>
+            <li class=""><a href="empleados.html" class="links">Empleados</a></li>
+            <li class=""><a href="sueldoliquido.html" class="links">Sueldo Líquido</a></li>
+            <li class=""><a href="indemnizacion.html" class="links">Indemnización</a></li>
+
+        </ul>
+    </nav>
+
+
+    <br><br>
+
+
+    <div>
+        <h1 style="text-align: left; margin-left: 300px; height: 10px;">Ingresos</h1>
+    </div>
+
+    <div>
+        <h1 style="text-align: left; margin-left: 960px;">Egresos</h1>
+    </div>
+
+    <br><br>
+
+
+    <span>
+        <section>
+            <article>
+                <form>
+                    <div class="inputbox">
+                        <input type="number" required id="salario">
+                        <label for="">Salario</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="number" required id="bonificacion">
+                        <label for="">Bonificación</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="number" required id="comisiones">
+                        <label for="">Comisiones</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="number" required  readonly id="totalGanado" placeholder="Total Ganado">
+                        <label id="totalGanado"></label>
+                    </div>
+                </form>
+            </article>
+        </section>
+
+
+        <section id="formulario2">
+            <article>
+                <form>
+                    <div class="inputbox">
+                        <input type="number" required id="ahorro">
+                        <label for="">Ahorro</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="number" required readonly id="igss" placeholder="IGSS">
+                        <label id="igss" for=""></label>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="number" required id="prestamos">
+                        <label for="">Préstamos / otros descuentos</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="number" required id="descuentos" readonly placeholder="Total de Descuentos">
+                        <label id="descuentos" for=""></label>
+                    </div>
+                </form>
+            </article>
+
+        </section>
+        <article class="logo51">
+            <img src="img/intecap51.jpg" width="300px" height="300px"
+                style="border-radius: 55px; margin-left: 100px; margin-top: 50px;">
+        </article>
+    </span>
+
+    <div>
+        <button type="button" class="buttonSueldoLiquido" onclick="mostrarSueldo()">
+            <h2 style=" text-shadow: 1px 0 1px;">Obtener sueldo líquido</h2>
+        </button>
+    </div>
+    <br>
+    <div id="resultado"></div>
+
+</body>
+
+</html>
